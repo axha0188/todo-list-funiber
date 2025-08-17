@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Your To Do</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="todo-wrap">
+      <h1 class="title">Your To Do</h1>
+
+      <!-- Input + botón -->
+      <form class="add-bar" action="#" onsubmit="return false;">
+        <input
+          id="add-input"
+          class="add-input"
+          type="text"
+          placeholder="Add new task:"
+        />
+        <button
+          class="add-btn"
+          type="button"
+          onclick="addTask()"
+          aria-label="Add task"
+        >
+          +
+        </button>
+      </form>
+
+      <!-- Lista -->
+      <ul id="todo-list" class="todo-list"></ul>
+    </main>
+  </body>
+  <script src="index.js"></script>
+</html>
